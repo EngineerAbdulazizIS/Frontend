@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Types of diagrams</title>
+ 
+<link rel = "icon" href = "1.png" type = "image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+<div class="dd">
+<h2><img src="1.png"></h2>
+<button class="accordion">Types of diagrams and their uses</button>
+<div class="panel">
+  <p>Diagrams are an essential tool for conveying complex information in a clear, concise, and visual manner.
+  They transform abstract ideas into tangible visuals, represent systems and processes, and facilitate communication and understanding.<br>
+With so many different types of diagrams out there, knowing which to use isn't always straightforward.<br><br>
+ This comprehensive guide will provide you with an in-depth overview of different types of diagrams, highlighting their features, applications, and benefits.</p>
+</div>
+
+<button class="accordion">Flowcharts: Mapping processes and workflows</button>
+<div class="panel">
+ <p>Flowcharts are widely recognized as valuable tools for visualizing and understanding processes or workflows. <br>Using standardized symbols and connectors, flowcharts provide a clear and logical representation of sequential steps and decision points.<br> They help identify bottlenecks, streamline operations, and improve overall efficiency.</p>
+ </div>
+
+<button class="accordion">Network diagrams: Visualizing relationships and connections</button>
+<div class="panel">
+ <p>Network diagrams are used to represent networks of communication, data flow, or connections between different entities.<br> By utilizing nodes and edges, they showcase the interdependencies and interactions within a network infrastructure or system.<br> They are commonly employed in fields such as computer networking, telecommunications, and system analysis.</p>
+ </div>
+
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
